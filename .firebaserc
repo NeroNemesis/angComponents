@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "employee-app-1132c": {
+      "hosting": {
+        "address-book": [
+          "employee-app-1132c"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "employee-app-1132c"
+  }
+}

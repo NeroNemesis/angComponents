@@ -1,4 +1,4 @@
-<form class="ui large form segment">
+<form class="ui large form segment"  #addressForm="ngForm">
   <h3 class="ui header">Address Details</h3>
   <fieldset [disabled]="!edit ? 'disabled' : null">
     <div class="form-group">
@@ -31,6 +31,10 @@
     <button  (click)="toggleEdit()"
              class="btn btn-secondary m-auto" *ngIf="!edit">
       Edit
+    </button>
+    <button class="btn btn-dark"
+      [hidden]="addressForm.pristine"
+      name="save" (click)="save()">Save
     </button>
   </div>
 </form>
